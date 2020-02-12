@@ -6,7 +6,7 @@ public class Teacher {
     Student[] stuList= new Student[2];
     String name;
 
-    public void setTeacherInfo(String inputName,Student stu1,Student stu2) {
+    public Teacher(String inputName,Student stu1,Student stu2) {
         name = inputName;
         setStudentInfos(stu1,stu2);
     }
