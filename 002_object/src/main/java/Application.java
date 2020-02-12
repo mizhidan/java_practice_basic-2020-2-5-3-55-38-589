@@ -10,7 +10,8 @@ public class Application {
         stu1.study();
         Student stu2 = new Student();
         stu2.setInfo("王其",21,"男");
-        Teacher teacher = new Teacher("张龙",stu1,stu2);
+        Teacher teacher = new Teacher("张龙");
+        teacher.setTeacherInfo(stu1,stu2);
         Student stu3 = new Student();
         stu3.setInfo("赵毅",22,"男");
         teacher.addStudent(stu3);
