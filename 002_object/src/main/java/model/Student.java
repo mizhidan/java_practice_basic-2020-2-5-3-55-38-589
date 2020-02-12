@@ -1,9 +1,15 @@
 package model;
 
 public class Student {
-    public String name;
-    public int age;
-    public String gender;
+    String name;
+    int age;
+    String gender;
+
+    public void setInfo(String inputName,int inputAge,String inputGender) {
+        age = inputAge;
+        name = inputName;
+        gender = inputGender;
+    }
 
     public void study() {
         System.out.println("读书\n");
